@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.calculator {
+  margin: 300px auto;
+  outline: 8px solid black;
+  width: 350px;
+  height: 400px;
+  background-color: red;
+}
+
+#display {
+  background-color: black;
+  width:100%;
+  height: 15%;
+  color:white;
+  text-align: right;
+  display: table;
+}
+#display span{
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+}
+.pad-area {
+  height: 85%;
+  display: grid;
+  grid-template-areas: 
+  "ac ac divide multiply"
+  "seven eight nine subtract"
+  "four five six add"
+  "one two three equals"
+  "zero zero decimal equals";
+}
+.pad-area div {
+  border: 1px solid black;
+  display: table;
+  height: 100%;
+  cursor: pointer;
+  width: 100%;
+}
+.pad-area div span{
+  display: table-cell;
+  vertical-align: middle;
+  color: aliceblue;
+  font-weight: bold;
+}
+#clear {
+  grid-area: ac;
+}
+#decimal {
+  grid-area: decimal;
+}
+#equals {
+  grid-area: equals;
+}
+#add {
+  grid-area: add;
+}
+#divide {
+  grid-area: divide;
+}
+#multiply {
+  grid-area: multiply;
+}
+#subtract {
+  grid-area: subtract;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+#zero {
+  grid-area: zero;
+}
+.dark-grey-area {
+  background-color: #4d4d4d
+}
+.blue-area {
+  background-color: rgb(0, 68, 102);
+}
+.light-grey-area {
+  background-color: rgb(102, 102, 102);
+}
+.red-area {
+  background-color: rgb(172, 57, 57);
+}
